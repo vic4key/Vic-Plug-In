@@ -1,0 +1,11 @@
+@ECHO OFF
+SET NAME=APPLYUPDATE
+SET CATENGINE=CatEngine
+
+IF EXIST %NAME%.exe DEL %NAME%.exe
+
+CALL VCVARS32
+CL /EHsc %NAME%.cpp /I $(Lib) %CATENGINE%.lib user32.lib shell32.lib advapi32.lib
+IF EXIST %NAME%.obj DEL %NAME%.obj
+
+PAUSE

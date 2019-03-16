@@ -1,0 +1,167 @@
+[B]INFORMATION[/B]
+[CODE][B]|---------------------------------------------|
+| Vic Plug-In 2 for OllyDbg 2.xx (Official)
+| Author: Vic aka vic4key
+| Mail: vic4key[at]gmail.com
+| Blog: [URL="http://viclab.biz"]http://viclab.biz[/URL]
+| Website: [URL="http://cin1team.biz"]http://cin1team.biz[/URL]
+|---------------------------------------------|[/B][/CODE]
+
+[B]LATEST VERSION[/B]
+[CODE]2.06[/CODE]
+
+[B]CHANGE LOG[/B]
+[CODE]----- [ MENU ] -----
+	Show the toolbar in the title of OllyDbg window
+	Maximize OllyDbg window when staring
+	Maximize OllyDbg child windows when staring
+	Show address info in status bar
+	Use APIs menu in OllyDbg menu bar
+	Apply confirm exit for OllyDbg
+	Make the transparency for OllyDbg window
+	Debuggee Data
+		Delete UDD data of the current session
+		Delete all UDD data
+		Open UDD data list
+		Delete recent debuggee files
+	Data Converter
+	DLL Process Viewer
+	File Location Converter
+	PE Viewer
+	Thread Viewer
+	Lookup Error Code
+	Find events of C++ Builder / Delphi VCL GUI application
+	Advanced Map File Importer
+		Map File Importer
+		Open Label window
+		Open Comment window
+	Bypass Anti Debugging
+		Hide the PEB
+	Data Copier
+		VA Address
+		RVA Address
+		Offset Address
+		ANSI String
+		UNICODE String
+		Code Ripped
+	Breakpoint Manager
+		INT3 Delete all
+		INT3 Import
+		INT3 Export
+		HWBP Delete all
+		HWBP Import
+		HWBP Export
+		MBP Delete all
+		MBP Import
+		MBP Export
+	Follow Me
+		Follow in Disassembler at <address>
+		Follow in Dump at <address>
+		Copy <address> to clipboard
+	Check for update
+	Infomation
+
+
+
+-----[ Version 2.06 ]-----
+
+[+] DATE UPDATE -> 24/09/2015
+
+[+] NEW FEATURES
+	1. Show address info in status bar
+	2. Use APIs menu in OllyDbg menu bar (easier to set INT3 Breakpoint)
+	3. Apply confirm exit for OllyDbg (just ask for quit while you're debugging)
+	4. Debuggee Data
+		Delete UDD data of the current session
+		Open UDD data list
+		Delete recent debuggee files
+	5. Thread Viewer (full thread infomation with Debug Register)
+	6. Find events of C++ Builder / Delphi VCL GUI application (working well, no need run to find)
+	7. Advanced Map File Importer
+		Open Label window
+		Open Comment window
+	8. Data Converter
+		Python/Ruby
+	9. Data Copier
+		ANSI String
+		UNICODE String
+	10. Breakpoint Manager (with my breakpoint file format)
+		INT3 Delete all
+		INT3 Import
+		INT3 Export
+		HWBP Delete all
+		HWBP Import
+		HWBP Export
+		MBP Delete all
+		MBP Import
+		MBP Export
+	11. Follow Me
+		Follow in Disassembler at <address>
+		Follow in Dump at <address>
+		Copy <address> to clipboard
+	12. Check for update (Update my plug-in by this function from now. No update via forums, blog, ...)
+
+[+] BUG FIX:
+	1. Show the toolbar in the title of OllyDbg window (fix for Windows 10)
+	2. File Location Converter (sync with ImageBase on loaded image, not file on disk)
+	3. Advanced Map File Importer
+		Map File Importer (sync with ImageBase & multi-modules)
+	4. Data Copier
+		VA Address
+		RVA Address
+		Offset Address
+
+
+
+-----[ Version 2.05 ]-----
+
+[+] DATE UPDATE -> 13/10/2013
+
+[+] NEW FEATURES
+	<None>
+
+[+] BUG FIX:
+	1. Crash OllyDbg when not used the toolbar
+	2. Delete UDD data
+	3. DATA Converter
+
+
+
+-----[ Version 2.04 ]-----
+
+[+] DATE UPDATE -> 24/03/2013
+
+[+] NEW FEATURES
+	1. Lookup Error Code
+	2. Bypass anti debugging
+		Hide the PEB
+	3. Address copier
+		Copy VA
+		Copy RVA
+		Copy Offset
+
+[+] BUG FIX:
+	1. Show the toolbar
+	2. DATA Converter
+	3. File Location Converter
+	4. Finding the Point Events in Delphi executables
+	5. Map file importer
+		Import labels
+		Import comments
+
+
+
+-----[ Old Version ]-----
+...[/CODE]
+
+SCREENSHOTS
+[QUOTE][url=http://s21.postimg.org/ha5o2zfqt/Screenshot_0.png][img]http://s21.postimg.org/co9jumu7n/Screenshot_0.png[/img][/url]
+
+[url=http://s21.postimg.org/kia5g120l/Screenshot_1.png][img]http://s21.postimg.org/j38krb0xf/Screenshot_1.png[/img][/url][/QUOTE]
+
+[CODE][B][U][URL="https://drive.google.com/file/d/0BzonFc1Y-m59Y1hmS0lfQTRKN0k/view?usp=sharing"]DOWNLOAD LATEST VERSION HERE[/URL][/U][/B][/CODE]
+
+[QUOTE]Ps: I apologize to OllyDbg 1.xx's users. I've been stopped developing Vic Plug-In version of OllyDbg 1.xx. You can switch to OllyDbg 2. I think it's a nice version (recommendation).[/QUOTE]
+
+[B]Best Regards
+Vic P.[/B]

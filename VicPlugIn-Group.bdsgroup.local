@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/07/29 20:02:55.231.bdsgroup,E:\CODE\DELPHI\_DELPHI\_DEFDIR\D2006\ProjectGroup1.bdsgroup=E:\CODE\DELPHI\_DELPHI\[VicPlug-In]\VicPlugIn-Group.bdsgroup</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="VicPlugIn2.dll"/>
+	</Default.Personality>
+</BorlandProject>

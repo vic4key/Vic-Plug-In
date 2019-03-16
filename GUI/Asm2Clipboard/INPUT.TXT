@@ -1,0 +1,57 @@
+0045C2B4      832D 4C234600 01 sub dword ptr ds:[ViCKmD.46234C],1
+0045C2BB      0F83 ED000000    jae ViCKmD.0045C3AE
+0045C2C1      E8 A682FCFF      call ViCKmD.0042456C
+0045C2C6      68 64234600      push offset ViCKmD.00462364
+0045C2CB      E8 F0A3FAFF      call <jmp.&kernel32.InitializeCriticalSection>       Jump to ntdll.RtlInitializeCriticalSection
+0045C2D0      68 7C234600      push offset ViCKmD.0046237C
+0045C2D5      E8 E6A3FAFF      call <jmp.&kernel32.InitializeCriticalSection>       Jump to ntdll.RtlInitializeCriticalSection
+0045C2DA      6A 07            push 7                                                Object = BLACK_PEN
+0045C2DC      E8 77A5FAFF      call <jmp.&gdi32.GetStockObject>                      GDI32.GetStockObject
+0045C2E1      A3 54234600      mov dword ptr ds:[ViCKmD.462354],eax
+0045C2E6      6A 05            push 5                                                Object = NULL_BRUSH
+0045C2E8      E8 6BA5FAFF      call <jmp.&gdi32.GetStockObject>                      GDI32.GetStockObject
+0045C2ED      A3 58234600      mov dword ptr ds:[ViCKmD.462358],eax
+0045C2F2      6A 0D            push 0D                                               Object = SYSTEM_FONT
+0045C2F4      E8 5FA5FAFF      call <jmp.&gdi32.GetStockObject>                      GDI32.GetStockObject
+0045C2F9      A3 5C234600      mov dword ptr ds:[ViCKmD.46235C],eax
+0045C2FE      68 007F0000      push 7F00                                             Icon = IDC_ARROW
+0045C303      6A 00            push 0                                                hInst = NULL
+0045C305      E8 8EA9FAFF      call <jmp.&user32.LoadIconA>                          USER32.LoadIconA
+0045C30A      A3 60234600      mov dword ptr ds:[ViCKmD.462360],eax
+0045C30F      E8 D482FCFF      call ViCKmD.004245E8                                  ViCKmD.004245E8
+0045C314      66:B9 3000       mov cx,30
+0045C318      B2 01            mov dl,1
+0045C31A      A1 80E24100      mov eax,dword ptr ds:[ViCKmD.41E280]
+0045C31F      E8 4420FCFF      call ViCKmD.0041E368                                  ViCKmD.0041E368
+0045C324      A3 94234600      mov dword ptr ds:[ViCKmD.462394],eax
+0045C329      66:B9 1000       mov cx,10
+0045C32D      B2 01            mov dl,1
+0045C32F      A1 80E24100      mov eax,dword ptr ds:[ViCKmD.41E280]
+0045C334      E8 2F20FCFF      call ViCKmD.0041E368                                  ViCKmD.0041E368
+0045C339      A3 98234600      mov dword ptr ds:[ViCKmD.462398],eax
+0045C33E      66:B9 1000       mov cx,10
+0045C342      B2 01            mov dl,1
+0045C344      A1 E8E24100      mov eax,dword ptr ds:[ViCKmD.41E2E8]
+0045C349      E8 1A20FCFF      call ViCKmD.0041E368                                  ViCKmD.0041E368
+0045C34E      A3 9C234600      mov dword ptr ds:[ViCKmD.46239C],eax
+0045C353      B2 01            mov dl,1
+0045C355      A1 68474200      mov eax,dword ptr ds:[ViCKmD.424768]
+0045C35A      E8 6584FCFF      call ViCKmD.004247C4                                  ViCKmD.004247C4
+0045C35F      A3 A4234600      mov dword ptr ds:[ViCKmD.4623A4],eax
+0045C364      B2 01            mov dl,1
+0045C366      A1 181D4100      mov eax,dword ptr ds:[ViCKmD.411D18]
+0045C36B      E8 087FFBFF      call ViCKmD.00414278                                  ViCKmD.00414278
+0045C370      A3 D0DD4500      mov dword ptr ds:[ViCKmD.45DDD0],eax
+0045C375      B2 01            mov dl,1
+0045C377      A1 181D4100      mov eax,dword ptr ds:[ViCKmD.411D18]
+0045C37C      E8 F77EFBFF      call ViCKmD.00414278                                  ViCKmD.00414278
+0045C381      A3 A0234600      mov dword ptr ds:[ViCKmD.4623A0],eax
+0045C386      B9 ECEB4100      mov ecx,ViCKmD.0041EBEC                              Entry point
+0045C38B      BA FCEB4100      mov edx,ViCKmD.0041EBFC                              Entry point
+0045C390      A1 74D54100      mov eax,dword ptr ds:[ViCKmD.41D574]
+0045C395      E8 8676FBFF      call ViCKmD.00413A20                                  ViCKmD.00413A20
+0045C39A      B9 F4ED4100      mov ecx,ViCKmD.0041EDF4                              Entry point
+0045C39F      BA 04EE4100      mov edx,ViCKmD.0041EE04                              Entry point
+0045C3A4      A1 A4D64100      mov eax,dword ptr ds:[ViCKmD.41D6A4]
+0045C3A9      E8 7276FBFF      call ViCKmD.00413A20                                  ViCKmD.00413A20
+0045C3AE      C3               ret

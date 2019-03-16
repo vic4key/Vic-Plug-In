@@ -1,0 +1,9 @@
+@Echo off
+del *.dcu
+del *.dsk
+del *.cfg
+del *.bak
+del *.local
+del *.identcache
+del *.stat
+del dcu\*.dcu

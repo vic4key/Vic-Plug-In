@@ -1,0 +1,59 @@
+asm
+	(* 0045C2B4 *)   sub dword ptr ds:[46234Ch],1h
+	(* 0045C2BB *)   jae Label_0045C3AE
+	(* 0045C2C1 *)   call Label_0042456C
+	(* 0045C2C6 *)   push 00462364h
+	(* 0045C2CB *)   call InitializeCriticalSection       Jump to ntdll.RtlInitializeCriticalSection
+	(* 0045C2D0 *)   push 0046237Ch
+	(* 0045C2D5 *)   call InitializeCriticalSection       Jump to ntdll.RtlInitializeCriticalSection
+	(* 0045C2DA *)   push 7                                                Object = BLACK_PEN
+	(* 0045C2DC *)   call GetStockObject                      GDI32.GetStockObject
+	(* 0045C2E1 *)   mov dword ptr ds:[462354h],eax
+	(* 0045C2E6 *)   push 5                                                Object = NULL_BRUSH
+	(* 0045C2E8 *)   call GetStockObject                      GDI32.GetStockObject
+	(* 0045C2ED *)   mov dword ptr ds:[462358h],eax
+	(* 0045C2F2 *)   push 0D                                               Object = SYSTEM_FONT
+	(* 0045C2F4 *)   call GetStockObject                      GDI32.GetStockObject
+	(* 0045C2F9 *)   mov dword ptr ds:[46235Ch],eax
+	(* 0045C2FE *)   push 7F00                                             Icon = IDC_ARROW
+	(* 0045C303 *)   push 0                                                hInst = NULL
+	(* 0045C305 *)   call LoadIconA                          USER32.LoadIconA
+	(* 0045C30A *)   mov dword ptr ds:[462360h],eax
+	(* 0045C30F *)   call Label_004245E8                                  Label_004245E8
+	(* 0045C314 *)   mov cx,30h
+	(* 0045C318 *)   mov dl,1h
+	(* 0045C31A *)   mov eax,dword ptr ds:[41E280h]
+	(* 0045C31F *)   call Label_0041E368                                  Label_0041E368
+	(* 0045C324 *)   mov dword ptr ds:[462394h],eax
+	(* 0045C329 *)   mov cx,10h
+	(* 0045C32D *)   mov dl,1h
+	(* 0045C32F *)   mov eax,dword ptr ds:[41E280h]
+	(* 0045C334 *)   call Label_0041E368                                  Label_0041E368
+	(* 0045C339 *)   mov dword ptr ds:[462398h],eax
+	(* 0045C33E *)   mov cx,10h
+	(* 0045C342 *)   mov dl,1h
+	(* 0045C344 *)   mov eax,dword ptr ds:[41E2E8h]
+	(* 0045C349 *)   call Label_0041E368                                  Label_0041E368
+	(* 0045C34E *)   mov dword ptr ds:[46239Ch],eax
+	(* 0045C353 *)   mov dl,1h
+	(* 0045C355 *)   mov eax,dword ptr ds:[424768h]
+	(* 0045C35A *)   call Label_004247C4                                  Label_004247C4
+	(* 0045C35F *)   mov dword ptr ds:[4623A4h],eax
+	(* 0045C364 *)   mov dl,1h
+	(* 0045C366 *)   mov eax,dword ptr ds:[411D18h]
+	(* 0045C36B *)   call Label_00414278                                  Label_00414278
+	(* 0045C370 *)   mov dword ptr ds:[45DDD0h],eax
+	(* 0045C375 *)   mov dl,1h
+	(* 0045C377 *)   mov eax,dword ptr ds:[411D18h]
+	(* 0045C37C *)   call Label_00414278                                  Label_00414278
+	(* 0045C381 *)   mov dword ptr ds:[4623A0h],eax
+	(* 0045C386 *)   mov ecx,Label_0041EBEC                              Entry point
+	(* 0045C38B *)   mov edx,Label_0041EBFC                              Entry point
+	(* 0045C390 *)   mov eax,dword ptr ds:[41D574h]
+	(* 0045C395 *)   call Label_00413A20                                  Label_00413A20
+	(* 0045C39A *)   mov ecx,Label_0041EDF4                              Entry point
+	(* 0045C39F *)   mov edx,Label_0041EE04                              Entry point
+	(* 0045C3A4 *)   mov eax,dword ptr ds:[41D6A4h]
+	(* 0045C3A9 *)   call Label_00413A20                                  Label_00413A20
+	(* 0045C3AE *)   ret
+end;
